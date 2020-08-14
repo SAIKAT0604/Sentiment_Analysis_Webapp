@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Sentimet Analysis</title>
+  </head>
+  <body>
+    <h1><div style="text-align:center"><font color="blue">Movie Review Sentiment Analysis Result</font></div></h1>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+              <h1><div style="text-align:center">Sentiment</div></h1>
+              <div class="card text-center" style="width:21.5em;margin:0 auto;">
+                <div class="card-body">
+                  <p class="card text">{{ sentiment }}</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <h1><div style="text-align:center">Probability</div></h1>
+              <div class="card text-center" style="width:21.5em;margin:0 auto;">
+                <div class="card-body">
+                  <p class="card text">{{ probability }}</p>
+                </div>
+              </div>
+            </div>
+
+            <!--Image -->
+                <div class="col-md-4"></div>
+                    <h1><div style="text-align:center">Emotion</div></h1>
+                    <div class="row"><div class="col-md-2"><img src="{{ image }}" alt="Image"></div></div>
+
+            <!--Image-->
+        </div>
+        </div>
+        <br>
+        <form><div style="text-align:center">
+     <input type="button" value="Make New Prediction" onclick="history.back()"></div>
+    </form>
+  </body>
+</html>
